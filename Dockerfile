@@ -1,0 +1,19 @@
+FROM plexinc/pms-docker
+
+ENV TZ="America/Fortaleza"
+ENV PLEX_CLAIM="claim-4hToTrxpRA8Cxsswmdq6"
+ENV ADVERTISE_IP="http://192.168.14.22"
+
+VOLUME /config
+VOLUME /transcode
+VOLUME /data
+
+EXPOSE 32400:32400/tcp
+EXPOSE 3005/tcp 
+EXPOSE 8324/tcp 
+EXPOSE 32469:32469/tcp 
+EXPOSE 1900:1900/udp 
+EXPOSE 32410:32410/udp 
+EXPOSE 32412:32412/udp 
+EXPOSE 32413:32413/udp 
+EXPOSE 32414:32414/udp 
