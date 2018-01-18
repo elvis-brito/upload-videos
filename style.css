@@ -7,14 +7,27 @@ body {
 	-moz-background-size: cover; /* FIREFOX */
 	-ms-background-size: cover; /* IE */
 	-o-background-size: cover; /* OPERA */
-  	width: 100vw;
-	height: 100vh;
-	margin: 0px;
+  	
 }
+.topo{
 
-.row{
+}
+div .corpo{
 	justify-content: center;
 }
 button{
 	margin: 0px 0px;
+}
+
+div #footer{
+	position:fixed;		/*importante: fixa a div */
+bottom:0;		/*importante: posiciona no rodapé */
+width:100%;
+z-index:2000;		/*importante: coloca a div acima de tudo */
+
+margin:0px;
+padding:10px 0;
+text-align:center;
+
+
 }

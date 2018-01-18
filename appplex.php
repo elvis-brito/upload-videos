@@ -1,9 +1,9 @@
 <?php
 	
-	$uploaddir = '/data/www/media/';
+	$uploaddir = './media/';
 	if(rename($_FILES['arquivo']['tmp_name'] , $uploaddir.$_FILES['arquivo']['name'])){
 		chmod ($uploaddir.$_FILES['arquivo']['name'], 0777);
-		echo "Enviado!";
+		header("Location: index.php?rt=1");
 	}else{
 		echo "Nao enviado!";
 	}
