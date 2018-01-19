@@ -34,21 +34,25 @@
 			</div>
 	  	
 
-		  	<div class="col-md-12" id="corpo" align="center">
-		  		
+		  	<div class="col-md-12" id="corpo" align="center">		  		
 		  		<form method="POST" action="appplex.php" ENCTYPE="multipart/form-data">
-					Selecione o arquivo: <input type="file" name="arquivo">
+					<br />
+					Selecione o arquivo: <br /> <input type="file" name="arquivo">
+					<br /><br />
+					Informe o número do ticket: <br /> <input type="text" name="ticket" required>
 					<br /><br />
 					<button type="submit" class="btn btn-primary">Enviar</button>
-
 				</form>
 			</div>
 
+			
+
 			<div class="col-md-12" id="footer" align="center">
-				
 				<a href="index.php">
 					<img src="./logo.png" class="img-responsive" alt="Imagem responsiva" width="100px" height="26px">
 				</a>
+				<br />
+				Copyright © 2018 NIDO Tecnologia - by Elvis Brito & Rafael Silva
 			</div>
 			
 
